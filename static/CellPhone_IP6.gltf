@@ -26,6 +26,11 @@
                 -0.06374689936637878,
                 -0.06571093946695328,
                 -0.06580720841884613
+            ],
+            "translation" : [
+                0,
+                3.4814534187316895,
+                0
             ]
         }
     ],
@@ -98,7 +103,7 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 18272,
+            "count" : 18020,
             "max" : [
                 123.8863525390625,
                 13.220320701599121,
@@ -114,19 +119,19 @@
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 18272,
+            "count" : 18020,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 18272,
+            "count" : 18020,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5123,
-            "count" : 27360,
+            "count" : 26778,
             "type" : "SCALAR"
         },
         {
@@ -134,14 +139,14 @@
             "componentType" : 5126,
             "count" : 28,
             "max" : [
-                115.00985717773438,
-                13.331877708435059,
-                40.111671447753906
+                116.21360778808594,
+                8.657913208007812,
+                40.506195068359375
             ],
             "min" : [
-                -37.329185485839844,
-                4.054549217224121,
-                -34.55657196044922
+                -35.878604888916016,
+                2.813030242919922,
+                -34.69266128540039
             ],
             "type" : "VEC3"
         },
@@ -167,43 +172,43 @@
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 219264,
+            "byteLength" : 216240,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 219264,
-            "byteOffset" : 219264
+            "byteLength" : 216240,
+            "byteOffset" : 216240
         },
         {
             "buffer" : 0,
-            "byteLength" : 146176,
-            "byteOffset" : 438528
+            "byteLength" : 144160,
+            "byteOffset" : 432480
         },
         {
             "buffer" : 0,
-            "byteLength" : 54720,
-            "byteOffset" : 584704
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 336,
-            "byteOffset" : 639424
+            "byteLength" : 53556,
+            "byteOffset" : 576640
         },
         {
             "buffer" : 0,
             "byteLength" : 336,
-            "byteOffset" : 639760
+            "byteOffset" : 630196
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 336,
+            "byteOffset" : 630532
         },
         {
             "buffer" : 0,
             "byteLength" : 224,
-            "byteOffset" : 640096
+            "byteOffset" : 630868
         },
         {
             "buffer" : 0,
             "byteLength" : 156,
-            "byteOffset" : 640320
+            "byteOffset" : 631092
         }
     ],
     "samplers" : [
@@ -214,7 +219,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 640476,
+            "byteLength" : 631248,
             "uri" : "CellPhone_IP6.bin"
         }
     ]
