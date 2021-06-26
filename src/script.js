@@ -21,7 +21,7 @@ const scene = new THREE.Scene()
 gltfLoader.load('./CellPhone_IP6.gltf', (gltf) => {
     
     gltf.scene.scale.set(0.3, 0.3, 0.3)
-        gltf.scene.rotation.set(0, 5, 0);
+        gltf.scene.rotation.set(0, 4.8, 0);
 
     scene.add(gltf.scene)
 
@@ -32,7 +32,7 @@ gltfLoader.load('./CellPhone_IP6.gltf', (gltf) => {
 
 // Lights
 
-const pointLight = new THREE.AmbientLight(0xffffff, 10)
+const pointLight = new THREE.AmbientLight(0xffffff, 1)
 pointLight.position.y = 3;
 pointLight.position.x = 2
 
