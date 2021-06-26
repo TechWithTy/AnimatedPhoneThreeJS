@@ -1,8 +1,8 @@
 import * as dat from 'dat.gui';
+import gsap from 'gsap';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import './style.css';
-
 const gltfLoader = new GLTFLoader();
 
 // Debug
@@ -15,16 +15,21 @@ const canvas = document.querySelector('canvas.webgl');
 const scene = new THREE.Scene();
 
 //Phone
-
+let tl = gsap.timeline();
 gltfLoader.load('./CellPhone_IP6.gltf', (gltf) => {
   gltf.scene.scale.set(0.3, 0.3, 0.3);
-  gltf.scene.rotation.set(0, 4.8, 0);
+  gltf.scene.rotation.set(0, 3.3, 0);
 
   scene.add(gltf.scene);
 
   gui.add(gltf.scene.rotation, 'x').min(-10).max(9);
   gui.add(gltf.scene.rotation, 'y').min(-10).max(9);
-  gui.add(gltf.scene.translate, 'z').min(-10).max(9);
+
+  tl.to(gltf.scene.rotation, { y: 4.5, duration: 1 });
+  tl.to(gltf.scene.scale, { x: 0.2, y: 0.2, z: 0.2, duration: 1 }, '-=1');
+  tl.to(gltf.scene.position, { x: 2 });
+  tl.to(gltf.scene.rotation, { y: 3.8, duration: 1 });
+  tl.to(gltf.scene.scale, { x: 0.25, y: 0.25, z: 0.25, duration: 1 }, '-=1');
 });
 
 // Lights
